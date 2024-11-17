@@ -11,7 +11,7 @@ const isPositiveNumber = (value) => {
 args.forEach((arg) => {
   if (isPositiveNumber(arg)) {
     setTimeout(() => {
-      process.stdout.write("\x07");
+      process.stdout.write(".");
     }, arg * 1000);
   }
 });
